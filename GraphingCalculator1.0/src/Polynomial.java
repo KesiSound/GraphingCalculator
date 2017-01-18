@@ -2,8 +2,7 @@ import java.util.ArrayList;
 
 public class Polynomial {
 	private String polynomial;
-	private int degree1;
-	private int degree2;
+	private int degree;
 	//Create arraylist of the polynomial
 	//Use polynomial objects to generate points
 	
@@ -14,9 +13,9 @@ public class Polynomial {
 	 * @param polynomial
 	 * @param degree1
 	 */
-	public Polynomial(String polynomial, int degree1) {
+	public Polynomial(String polynomial, int degree) {
 		this.polynomial = polynomial;	
-		this.degree1 = findDegree(polynomial);
+		this.degree = findDegree(polynomial);
 		
 	}
 	
@@ -29,20 +28,13 @@ public class Polynomial {
 	 * @return
 	 */
 	private int findDegree(String polynomial){
-		int degree1 = 0;
-		int degree2 = 0;
+		int degree = 0;
 		ArrayList<Integer> coefficientsPolynomial = stringToArray(polynomial);
 		
-		degree1 = coefficientsPolynomial.size();
+		degree = coefficientsPolynomial.size();
 		
-		
-		
-		return degree1;
+		return degree;
 	}
-	
-
-	
-
 	
 	
 	
