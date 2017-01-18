@@ -2,20 +2,56 @@ import java.util.ArrayList;
 
 public class Polynomial {
 	private String polynomial;
+	private int degree1;
+	private int degree2;
 	//Create arraylist of the polynomial
 	//Use polynomial objects to generate points
 	
-	public Polynomial(String polynomial) {
-		this.polynomial = polynomial;
+	
+	
+	/** Constructor to the Polynomial class that creates a polynomial and its degree
+	 * 
+	 * @param polynomial
+	 * @param degree1
+	 */
+	public Polynomial(String polynomial, int degree1) {
+		this.polynomial = polynomial;	
+		this.degree1 = findDegree(polynomial);
+		
 	}
+	
+	
+	
+	/** Method that finds the degree of the polynomials
+	 * 
+	 * @param polynomial1
+	 * @param polynomial2
+	 * @return
+	 */
+	private int findDegree(String polynomial){
+		int degree1 = 0;
+		int degree2 = 0;
+		ArrayList<Integer> coefficientsPolynomial = stringToArray(polynomial);
+		
+		degree1 = coefficientsPolynomial.size();
+		
+		
+		
+		return degree1;
+	}
+	
+
+	
+
+	
+	
 	
 	
 	//method for polynomial division
 	
-	public String division(String polynomial1, String polynomial2){
+	public String division(Polynomial polynomial1, Polynomial polynomial2){
 		String finalPolynomial = "";
-		ArrayList<Integer> polynomialCoefficients1 = stringToArray(polynomial1);
-		ArrayList<Integer> polynomialCoefficients2 = stringToArray(polynomial2);
+
 
 		
 		
