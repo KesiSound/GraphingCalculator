@@ -12,17 +12,24 @@ public class Polynomial {
 	
 	//method for polynomial division
 	
-	public String division(String polynomial){
-		ArrayList<Integer> polynomialCoefficients = stringToArray(polynomial);
+	public String division(String polynomial1, String polynomial2){
+		String finalPolynomial = "";
+		ArrayList<Integer> polynomialCoefficients1 = stringToArray(polynomial1);
+		ArrayList<Integer> polynomialCoefficients2 = stringToArray(polynomial2);
+
 		
 		
 		
-		
-		return polynomial;
+		return finalPolynomial;
 	}
 	
 	
-	//method for polynomial multiplication
+	
+	
+	/** Helper method that converts the polynomial string to an ArrayList of coefficients
+	 * @param polynomial
+	 * @return
+	 */
 	private static ArrayList<Integer> stringToArray(String polynomial){
 		  ArrayList<Integer> coefficients = new ArrayList<Integer>();
 		  int temp1 = 0;
@@ -41,5 +48,29 @@ public class Polynomial {
 
 	      return coefficients;
 	}
+	
+	
+	/** Helper method that finds the greatest common factor of the polynomial
+	 * 
+	 * @param listCoefficients
+	 * @return
+	 */
+	private int GCF(ArrayList<Integer> listCoefficients){
+		int factor = 0;
+		
+		
+		return factor;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 }
