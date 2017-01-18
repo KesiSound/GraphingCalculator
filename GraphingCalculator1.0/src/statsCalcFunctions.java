@@ -16,6 +16,7 @@ public class statsCalcFunctions {
 	public static double calcMean(List yourList) {
 		yourList.getArrayList()
 	}
+	
 
 	
 	
