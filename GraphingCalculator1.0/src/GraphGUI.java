@@ -6,6 +6,6 @@ public class GraphGUI extends JPanel{
 	JPanel panel = new JPanel();
 	
 	public GraphGUI(){
-		this.panel
+		
 	}
 }
