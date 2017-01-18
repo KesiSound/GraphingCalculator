@@ -9,7 +9,6 @@ public class main {
 	private static Integer[] coefficients;
 	private static int tempCoefficient;
 	private static String polynomial;
-	private static ArrayList<Object> thing;
 	
 	private static String getInput() {
 		String temp;
