@@ -20,21 +20,17 @@ public class main {
 
 	private static ArrayList<Integer> stringToArray(String polynomial){
 		  ArrayList<Integer> coefficients = new ArrayList<Integer>();
-
+		  int temp1 = 0;
 	      //uses a for loop to go through the string then convert it into an ArrayList
 	      for (int i = 0; i < polynomial.length(); i++){
 	        String temp = polynomial.substring(i, i + 1);
 	        if (temp == "x"){
-	        	switch (temp){
-	        	case "1":
-	        	case "2": 
-	        	
-	        	}
+	        	 temp1  = Integer.parseInt(temp);
 	        	
 	          continue;
 	        }
 	        else {
-	          coefficients.add(temp);
+	          coefficients.add(temp1);
 	        }
 	      }
 
